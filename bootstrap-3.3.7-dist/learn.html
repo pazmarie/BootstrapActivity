@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,9 +33,9 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li ><a href="index.html"> Home </a></li>
-            <li class="active"><a href="about.html"> About </a></li>
+            <li ><a href="about.html"> About </a></li>
             <li class="dropdown">
-              <a href="learn.html" class="dropdown-toggle" data-toggle="dropdown">Learn
+              <li class="active"><a href="learn.html" class="dropdown-toggle" data-toggle="dropdown">Learn
               <b class="caret"></b>
               <ul class="dropdown-menu">
                 <li class="dropdown-header">Examples</li>
@@ -49,13 +50,47 @@
         </div>
       </nav>
     <div class="container">
-      <div class="jumbotron text-center">
-        <h1>Hello World!</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book.</p>
-      </div>
+        <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-type="mycarousel" data-slide-to="0" class="active"></li>
+                <li data-type="mycarousel" data-slide-to="1"></li>
+                <li data-type="mycarousel" data-slide-to="2"></li>
+            </ol>
+    
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/1.jpg">
+                    <div class="carousel-caption">
+                        <h1> Theme 1 </h1>
+            </div>
+            </div>
+            <div class="item">
+                    <img src="img/2.jpg">
+                    <div class="carousel-caption">
+                        <h1> Theme 2 </h1>
+            </div>
+            </div>
+            <div class="item">
+                    <img src="img/3.jpg">
+                    <div class="carousel-caption">
+                        <h1> Theme 3 </h1>
+            </div>
+            </div>
+            </div>
+            
+    
+    <a class="left carousel-control" href="mycarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    
+    <a class="right carousel-control" href="mycarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+    
+    
+    
+    
     
     <div class="page-header">
       <h1>Image</h1>
@@ -72,18 +107,18 @@
         
         <div class="col-sm-4">
           <a href="#" class="thumbnail">
-           <img src="img/java.png" width="250" height="250" aLT="c++ tutorial">
+           <img src="img/c++.png" width="250" height="250" aLT="c++ tutorial">
           </a>
-          <h3>JAVA</h3>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          <h3>Java</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       </div>
       
    
         <div class="col-sm-4">
           <a href="#" class="thumbnail">
-           <img src="img/html.png" width="250" height="250" aLT="c++ tutorial">
+           <img src="img/c++.png" width="250" height="250" aLT="c++ tutorial">
           </a>
-          <h3>HTML</h3>
+          <h3>C++</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       </div>
    </div>
@@ -97,6 +132,11 @@
         <div class="navbar-text pull-left">
         <p>copyright WebsiteDevelopment 2016</p>
       </div>
+      <div class="navbar-text pull-right">
+          <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-2x" style=color:red aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          </div>
     </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
